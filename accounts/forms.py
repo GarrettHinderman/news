@@ -6,14 +6,17 @@ class CustomUserCreationForm(UserCreationForm):
     class Meta:
         model = CustomUser
         fields = (
-            "username", "email", "age",
+            "username",
+            "email",
+            "age",
         )
-
 
 
 class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = CustomUser
-        fields =(
-            "username", "email", "age",
+        fields = (
+            "username",
+            "email",
+            "age",
         )
